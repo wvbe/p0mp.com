@@ -5,7 +5,8 @@ export default class SteamOnline extends React.Component {
 		super(props);
 
 		this.state = {
-			membersOnline: 0
+			membersOnline: 0,
+			membersInGame: 0
 		};
 	}
 
