@@ -36,8 +36,8 @@ export default class App extends Component {
 			<section>
 				<h1>online</h1>
 				<ul>
-					<li>Steam: <SteamOnline /></li>
-					<li>TeamSpeak: <TeamSpeakOnline /></li>
+					<li>steam: <SteamOnline /></li>
+					<li>teamspeak: <TeamSpeakOnline /></li>
 				</ul>
 			</section>
 		</div>
