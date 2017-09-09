@@ -27,7 +27,7 @@ export default function App () {
 		<section>
 			<h1>game servers</h1>
 			<ul>
-				<li>rust.p0mp.com</li>
+				<li><a href="steam://connect/rust.p0mp.com:28015">rust.p0mp.com</a></li>
 			</ul>
 		</section>
 	</div>
