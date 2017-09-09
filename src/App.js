@@ -1,13 +1,15 @@
 import React, {Component} from 'react';
 
 import P0mpLogo from './P0mpLogo';
+import SteamOnline from './SteamOnline';
+import TeamSpeakOnline from './TeamSpeakOnline';
 
 export default function App () {
 	return <div
 		style={{
 			display: 'flex',
 			flexDirection: 'column',
-			width: '12em',
+			width: '16em',
 			height: 'auto',
 			position: 'absolute',
 			top: '50%',
@@ -28,6 +30,13 @@ export default function App () {
 			<h1>game servers</h1>
 			<ul>
 				<li><a href="steam://connect/rust.p0mp.com:28015">rust.p0mp.com</a></li>
+			</ul>
+		</section>
+		<section>
+			<h1>online</h1>
+			<ul>
+				<li>Steam: <SteamOnline /></li>
+				<li>TeamSpeak: <TeamSpeakOnline /></li>
 			</ul>
 		</section>
 	</div>
