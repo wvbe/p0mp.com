@@ -1,9 +1,34 @@
 import React, {Component} from 'react';
 
-import logoUrl from './logo.png';
+import P0mpLogo from './P0mpLogo';
 
 export default function App () {
-	return <div>
-		<img src={ logoUrl } />;
+	return <div
+		style={{
+			display: 'flex',
+			flexDirection: 'column',
+			width: '12em',
+			height: 'auto',
+			position: 'absolute',
+			top: '50%',
+			left: '50%',
+			transform: 'translate(-50%, -50%)'
+		}}
+	>
+		<h1 style={{ display: 'none' }}>p0mp</h1>
+		<P0mpLogo />
+		<section>
+			<h1>community</h1>
+			<ul>
+				<li><a href="ts3server://teamspeak.p0mp.com">teamspeak.p0mp.com</a></li>
+				<li><a href="https://p0mp.slack.com">p0mp.slack.com</a></li>
+			</ul>
+		</section>
+		<section>
+			<h1>game servers</h1>
+			<ul>
+				<li>rust.p0mp.com</li>
+			</ul>
+		</section>
 	</div>
 }
