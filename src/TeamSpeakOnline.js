@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-export default class TeamSpeakOnline extends React.Component {
+export default class TeamSpeakOnline extends Component {
 	constructor(props) {
 		super(props);
 
@@ -22,7 +22,9 @@ export default class TeamSpeakOnline extends React.Component {
 				}
 
 				response.json().then((data) => {
-					this.setState({ clientList: data.clientList });
+					this.setState({
+						clientList: data.clientList.filter((client) => client.client_type !== 1)
+					});
 				});
 			});
 	}
