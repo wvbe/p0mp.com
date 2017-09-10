@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 import handleFetchResponse from '../helpers/handleFetchResponse';
 
@@ -13,11 +13,11 @@ export default class SteamOnline extends Component {
 	}
 
 	componentDidMount() {
-		this.SteamOnline();
+		this.updateOnlineCount();
 	}
 
-	SteamOnline() {
-		fetch('http://128.199.55.12:9000/steam')
+	updateOnlineCount() {
+		return fetch('http://128.199.55.12:9000/steam')
 			.then(handleFetchResponse)
 			.then((data) => {
 				this.setState({

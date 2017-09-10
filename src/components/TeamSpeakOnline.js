@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 import handleFetchResponse from '../helpers/handleFetchResponse';
 
@@ -22,11 +22,11 @@ export default class TeamSpeakOnline extends Component {
 	}
 
 	componentDidMount() {
-		this.TeamSpeakOnline();
+		this.updateOnlineCount();
 	}
 
-	TeamSpeakOnline() {
-		fetch('http://128.199.55.12:9010/teamspeak/clients')
+	updateOnlineCount() {
+		return fetch('http://128.199.55.12:9010/teamspeak/clients')
 			.then(handleFetchResponse)
 			.then((data) => {
 				this.setState({

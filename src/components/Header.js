@@ -1,14 +1,21 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react'
 
-import Logo from './Logo';
+import Logo from './Logo'
+import Navigation from './Navigation'
 
 export default class Header extends Component {
 	render() {
 		return (
-			<section>
+			<div
+				style={{
+					background: '#666',
+					display: 'flex',
+					flexDirection: 'row'
+				}}
+			>
 				<Logo />
-				<h1 style={{ display: 'none' }}>p0mp</h1>
-			</section>
+				<Navigation />
+			</div>
 		);
 	}
 }
