@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-export default class P0mpLogo extends Component {
+export default class Logo extends Component {
 	render() {
 		return (
 			<svg

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import P0mpLogo from './P0mpLogo';
+import Header from './Header';
 import SteamOnline from './SteamOnline';
 import TeamSpeakOnline from './TeamSpeakOnline';
 
@@ -18,8 +18,7 @@ export default class App extends Component {
 				transform: 'translate(-50%, -50%)'
 			}}
 		>
-			<h1 style={{ display: 'none' }}>p0mp</h1>
-			<P0mpLogo />
+			<Header />
 			<section>
 				<h1>community</h1>
 				<ul>
@@ -34,7 +33,7 @@ export default class App extends Component {
 				</ul>
 			</section>
 			<section>
-				<h1>online</h1>
+				<h1>online players</h1>
 				<ul>
 					<li>steam: <SteamOnline /></li>
 					<li>teamspeak: <TeamSpeakOnline /></li>
