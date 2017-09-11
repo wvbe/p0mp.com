@@ -7,9 +7,11 @@ export default class About extends Component {
 		return (
 			<div>
 				<Header/>
-				<section>
-					About
-				</section>
+				<div>
+					<section>
+						About
+					</section>
+				</div>
 			</div>
 		);
 	}
