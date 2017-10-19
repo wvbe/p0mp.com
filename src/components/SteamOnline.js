@@ -2,6 +2,11 @@ import React, {Component} from 'react';
 
 import handleFetchResponse from '../helpers/handleFetchResponse';
 
+/**
+ * 
+ */
+const STEAM_API_ENDPOINT = 'http://128.199.55.12:9000/steam';
+
 export default class SteamOnline extends Component {
 	constructor(props) {
 		super(props);
@@ -17,7 +22,7 @@ export default class SteamOnline extends Component {
 	}
 
 	SteamOnline() {
-		fetch('http://128.199.55.12:9000/steam')
+		return fetch(STEAM_API_ENDPOINT)
 			.then(handleFetchResponse)
 			.then((data) => {
 				this.setState({

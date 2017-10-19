@@ -3,6 +3,11 @@ import React, {Component} from 'react';
 import handleFetchResponse from '../helpers/handleFetchResponse';
 
 /**
+ * 
+ */
+const TEAMSPEAK_API_CLIENTS_ENDPOINT = 'http://128.199.55.12:9010/teamspeak/clients';
+
+/**
  * Filter out the ServerQuery users identified by their clientType.
  *
  * @param client The ClientObject from the API.
@@ -26,7 +31,7 @@ export default class TeamSpeakOnline extends Component {
 	}
 
 	TeamSpeakOnline() {
-		fetch('http://128.199.55.12:9010/teamspeak/clients')
+		return fetch(TEAMSPEAK_API_CLIENTS_ENDPOINT)
 			.then(handleFetchResponse)
 			.then((data) => {
 				this.setState({

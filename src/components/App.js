@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 import Header from './Header';
+import DiscordOnline from './DiscordOnline';
 import SteamOnline from './SteamOnline';
 import TeamSpeakOnline from './TeamSpeakOnline';
 
@@ -35,6 +36,7 @@ export default class App extends Component {
 			<section>
 				<h1>online players</h1>
 				<ul>
+					<li>discord: <DiscordOnline /></li>
 					<li>steam: <SteamOnline /></li>
 					<li>teamspeak: <TeamSpeakOnline /></li>
 				</ul>
