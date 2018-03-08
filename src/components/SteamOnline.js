@@ -17,7 +17,7 @@ export default class SteamOnline extends Component {
 	}
 
 	SteamOnline() {
-		fetch('http://128.199.55.12:9000/steam')
+		fetch('http://docker-node-03.p0mp.com:9001/steam')
 			.then(handleFetchResponse)
 			.then((data) => {
 				this.setState({

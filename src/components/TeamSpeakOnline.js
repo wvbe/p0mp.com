@@ -26,7 +26,7 @@ export default class TeamSpeakOnline extends Component {
 	}
 
 	TeamSpeakOnline() {
-		fetch('http://128.199.55.12:9010/teamspeak/clients')
+		fetch('http://docker-node-03.p0mp.com:9000/teamspeak/clients')
 			.then(handleFetchResponse)
 			.then((data) => {
 				this.setState({
